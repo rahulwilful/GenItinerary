@@ -2,7 +2,7 @@ from django.http import HttpResponse, JsonResponse
 import openai
 import os
 from dotenv import load_dotenv,dotenv_values
-""" openai.my_api_key = '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' """
+
 load_dotenv()
 
 openai.my_api_key = os.getenv("OPENAI_API_KEY")
